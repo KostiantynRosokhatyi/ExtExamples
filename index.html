@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="extjs/3.4.0/resources/css/ext-all.css"/>
+    <script type="text/javascript" src="extjs/3.4.0/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="extjs/3.4.0/ext-all-debug.js"></script>
+    <script type="text/javascript" src="ExtWindow0.js"></script>
+    <!--
+    <script type="text/javascript" src="../../../extjs/3.4.0/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../../../extjs/3.4.0/ext-all.js"></script>
+    -->
+</head>
+<body>
+<script>
+
+    if (Ext === undefined){
+        alert("ExtJS Don't downloaded");
+    } else {
+        Ext.onReady(function() {
+            var win1 = createWindow0();
+            win1.show();
+        });
+    }
+
+</script>
+ <div id="panelExt">
+ </div>
+</body>
+</html>
