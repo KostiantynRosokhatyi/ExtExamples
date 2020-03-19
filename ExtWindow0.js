@@ -1,5 +1,10 @@
 // Ext.Window
-function createWindow0(){
+Ext.ns('App');
+Ext.ns('App.Componets');
+Ext.ns('App.Helper');
+Ext.ns('App.Layouts');
+Ext.ns('App.window');
+App.window.createWindow0 = function(){
     var win = new Ext.Window({
         modal: true,
         layout: 'fit',
@@ -9,7 +14,7 @@ function createWindow0(){
         width: 300,
         items: [{
             xtype: 'panel',
-            html: "<p style='text-align:center'>Ext.Window 0. Resize the window</p>"
+            html: "<p style='text-align:center'>Resize the window</p>"
         }],
         buttons: [{
             text: 'Back to standard size',
