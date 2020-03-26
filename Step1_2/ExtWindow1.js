@@ -2,6 +2,8 @@
 Ext.ns('App.window1');
 
 App.window1.createWindow1 = function(){
+/*/!*    var cp = new Ext.ColorPalette({value:'993300'});  // initial selected color
+    cp.ren*!/der('panelExt');*/
 
     var formPanel = new Ext.form.FormPanel({
         frame : true,
