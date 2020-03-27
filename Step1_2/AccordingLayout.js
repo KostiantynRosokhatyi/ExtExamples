@@ -1,6 +1,6 @@
-Ext.ns('App.window5');
+Ext.ns('App.AccordionLayout');
 
-App.window5.createAccordingLayout = function(){
+App.AccordionLayout.createAccordingLayout = function(){
 
     var win = new Ext.create ({
         /*title: 'According Layout',*/
@@ -16,7 +16,7 @@ App.window5.createAccordingLayout = function(){
         items: [{
             xtype: 'panel',
             title: 'According Layout',
-            layout: 'according',
+            layout: 'accordion',
             defaults: {
                 bodyStyle: 'padding:15px'
             },
