@@ -40,26 +40,12 @@ Ext.onReady(function() {
                 }
             }, {
                 xtype: 'button',
-                text: 'AccordingLayout',
-                handler: function (){
-                    var createAccordingLayoutButton = App.AccordionLayout.createAccordingLayout();
+                text: 'CreateAccordingLayout',
+                handler: function(){
+                    var createAccordingLayoutButton = App.window5.createAccordingLayout();
                     createAccordingLayoutButton.show();
                 }
 
-            }, {
-                xtype: 'button',
-                text: 'createLayoutAbsolute',
-                handler: function () {
-                    var createLayoutAbsoluteButton = App.layoutAbsolute.createLayoutAbsolute();
-                    createLayoutAbsoluteButton.show();
-                }
-            }, {
-                xtype: 'button',
-                text: 'createLayoutColumn',
-                handler: function () {
-                    var createLayoutColumnButton = App.layoutColumnWindow.createLayoutColumn();
-                    createLayoutColumnButton.show();
-                }
             }
         ]
     });
