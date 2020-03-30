@@ -46,6 +46,15 @@ Ext.onReady(function() {
                     createAccordingLayoutButton.show();
                 }
 
+            },
+            {
+                xtype: 'button',
+                text: 'CreateHBoxLayout',
+                handler: function(){
+                    var createHBoxLayoutButton = App.HBoxLayoutWindow.createHBoxLayoutWindow()
+                    createHBoxLayoutButton.show();
+                }
+
             }
         ]
     });
