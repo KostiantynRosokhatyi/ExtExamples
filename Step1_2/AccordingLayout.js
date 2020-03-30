@@ -22,7 +22,7 @@ App.AccordionLayout.createAccordingLayout = function(){
             },
             layoutConfig: {
                 titleCollapse: false,
-                animate: false
+                animate: true
             },
             items: [{
                 title: "Panel one",

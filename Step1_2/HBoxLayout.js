@@ -26,24 +26,40 @@ App.HBoxLayoutWindow.createHBoxLayoutWindow = function () {
                 width: 50,
             }]
         })
-    })
-
-
-    var formPanel2 = new Ext.form.FormPanel({
 
     });
 
 
     var win = new Ext.Window({
         title: 'HBox form',
-        items: formPanel,
         layout: 'fit',
         modal: false,
         frame: true,
         width: 500,
         height: 300,
-        autoScroll: true
+        autoHeight: false,
+        autoScroll: true,
+        items: [formPanel
+        , {
+            xtype: 'panel',
+            title: "News",
+            layout: 'accordion',
+            defaults: {
+                bodyStyle: 'padding:15px'
+            },
+            layoutConfig: {
+                titleCollapse: false,
+                animate: true,
+            },
+            items: [{
+                title: "News of 30/03/2020",
+                html: 'America has 145 000 people with coronavirus'
+            }, {
+                title: "News of 31/03/2020",
+                html: 'America has 185 000 people with coronavirus'
+            }],
+        }],
 
     });
     return win;
-}
+};

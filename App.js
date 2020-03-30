@@ -42,7 +42,7 @@ Ext.onReady(function() {
                 xtype: 'button',
                 text: 'CreateAccordingLayout',
                 handler: function(){
-                    var createAccordingLayoutButton = App.window5.createAccordingLayout();
+                    var createAccordingLayoutButton = App.AccordionLayout.createAccordingLayout();
                     createAccordingLayoutButton.show();
                 }
 
